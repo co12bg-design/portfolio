@@ -24,6 +24,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    height: 100vh;
 }
 
 section {
@@ -230,6 +231,7 @@ section {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .projects-container .project-box {
@@ -359,16 +361,23 @@ header h1 {
 .pet-card:hover {
     transform: scale(1.03);
 }
-
-.pet-card img {
-    width: 60%;
-    height: 200px;
+.pet-card .about-img{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     object-fit: cover;
+}
+.pet-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 5%;
 }
 
 .pet-card .info {
-    padding: 1rem;
+    padding: 4rem;
 }
+
 
 .pet-card h2 {
     margin-bottom: 0.5rem;
@@ -378,7 +387,9 @@ header h1 {
 .pet-card p {
     font-size: 0.9rem;
     color: #555;
+
 }
+
 
 footer {
     text-align: center;
